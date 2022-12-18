@@ -25,20 +25,23 @@ class Home extends React.Component {
       <section className="container">
         {isLoading ? (
           <div className="loader">
-            <span className="loader__text">Loading...</span>
+            <span className="loader_text">Loading...</span>
           </div>
         ) : (
           <div className="movies">
             {movies.map((movie) => {
               return (
                 <Movie
-                  key={movie.id}
                   id={movie.id}
-                  year={movie.year}
+                  key={movie.id}
+
+
                   title={movie.title}
+                  year={movie.year}
                   summary={movie.summary}
-                  poster={movie.medium_cover_image}
+
                   genres={movie.genres}
+                  poster={movie.medium_cover_image}
                 />
               );
             })}

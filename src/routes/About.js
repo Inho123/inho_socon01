@@ -3,9 +3,9 @@ import './About.css';
 
 function About() {
   return (
-    <div className="about__container">
+    <div className="about_container">
       <span>
-        “Freedom is the freedom to say that two plus two make four. If that is granted, all else
+        “Freedom is the freedom to say that two pus two make four. If that is granted, all else
         follows.”
       </span>
       <span>- George Orwell, 1984</span>
